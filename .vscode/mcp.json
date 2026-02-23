@@ -1,0 +1,13 @@
+{
+  "servers": {
+    "demo-server-stdio": {
+      "type": "stdio",
+      "command": "docker",
+      "args": ["run", "-i", "--rm", "fastmcp-demo"]
+    },
+    "demo-server-http": {
+      "type": "http",
+      "url": "http://localhost:8000/mcp"
+    }
+  }
+}

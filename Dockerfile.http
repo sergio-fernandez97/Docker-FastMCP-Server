@@ -1,0 +1,13 @@
+# Dockerfile.http — FastMCP server with Streamable HTTP transport
+# Use this for remote deployments or when running alongside other containers
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir fastmcp
+
+COPY server_http.py .
+
+EXPOSE 8000
+
+ENTRYPOINT ["python", "server_http.py"]
