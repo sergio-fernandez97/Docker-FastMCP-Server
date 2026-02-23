@@ -46,13 +46,19 @@ docker build -t fastmcp-demo .
 claude mcp add demo-server -- docker run -i --rm fastmcp-demo
 ```
 
-### 3. Verify
+#### 2.1 Verify
 
 ```bash
 claude mcp list
 # Then inside a Claude Code session:
 /mcp
 ```
+
+### 3. Connect from GitHub Copilot (VS Code)
+
+The `.vscode/mcp.json` file is already configured. VS Code will auto-discover it.
+Open VS Code → Command Palette → `MCP: List Servers` to confirm.
+
 
 ---
 
